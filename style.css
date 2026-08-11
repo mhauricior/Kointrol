@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #17202a;
+}
+
+.app {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+    min-height: 100vh;
+    background: white;
+}
+
+.header {
+    padding: 24px 20px 18px;
+    background: #111827;
+    color: white;
+    border-radius: 0 0 24px 24px;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+main {
+    padding: 20px;
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.wallet {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #f8fafc;
+    border-radius: 16px;
+}
+
+.wallet-icon {
+    font-size: 28px;
+    margin-right: 14px;
+}
+
+.wallet-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wallet-info span {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.wallet-info strong {
+    font-size: 20px;
+}
+
+.patrimony {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    background: #111827;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.patrimony span {
+    font-size: 15px;
+}
+
+.patrimony strong {
+    font-size: 30px;
+}
+
+.patrimony small {
+    opacity: 0.7;
+}
+
+.actions {
+    margin-top: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.actions button {
+    border: none;
+    background: #f1f5f9;
+    border-radius: 16px;
+    padding: 18px 10px;
+    font-size: 25px;
+    cursor: pointer;
+    min-height: 95px;
+}
+
+.actions button span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #17202a;
+}
+
+.actions button:active {
+    transform: scale(0.97);
+}
+
+.achievement {
+    margin-top: 24px;
+    padding: 18px;
+    border-radius: 18px;
+    background: #f8fafc;
+}
+
+.achievement-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.achievement-name {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.progress {
+    width: 100%;
+    height: 12px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 100%;
+    background: #111827;
+    border-radius: 20px;
+}
+
+.progress-text {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+@media (min-width: 481px) {
+    .app {
+        margin-top: 20px;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+  }
